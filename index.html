@@ -1,14 +1,45 @@
-<!--index.html-->
-
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <title>Hello World!</title>
+    <style>
+        .table {
+            background-color: #ffe08a;
+        }
+
+        .table thead th {
+            color: #946c00;
+        }
+        .rang{
+            width: 60px;
+        }
+        .nom{
+            width: 200px;
+        }
+        .symbole{
+            width: 80px;
+        }
+        .prix{
+            width: 100px;
+        }
+        .marche{
+            width: 150px;
+        }
+        .fond{
+            width: 170px;
+        }
+        .volume{
+            width: 140px;
+        }
+        .h24{
+            width: 100px;
+        }
+
+
+    </style>
 </head>
 <body>
 <table class="table is-narrow is-hoverable" id="leaderboard">
@@ -21,7 +52,7 @@
         <th class="marche">Cap de marché</th>
         <th class="fond">Fond en circulation</th>
         <th class="volume">Volume (24h)</th>
-        <th class="24">24h %</th>
+        <th class="h24">24h %</th>
     </tr>
     </thead>
     <tbody id="cryptocurrencies">
@@ -77,9 +108,10 @@
                 "</tr>"
             );
             cryptocurrencies[i].$item = $item;
+            $list.append($item);
         }
     }
-
+}
     </script>
-    </body>
-    </html>
+</body>
+</html>

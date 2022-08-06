@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^20.0.1"
+  },
+  "dependencies": {
+    "bulma": "^0.9.4"
   }
 }
