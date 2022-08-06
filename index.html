@@ -13,28 +13,36 @@
         .table thead th {
             color: #946c00;
         }
-        .rang{
+
+        .rang {
             width: 60px;
         }
-        .nom{
+
+        .nom {
             width: 200px;
         }
-        .symbole{
+
+        .symbole {
             width: 80px;
         }
-        .prix{
+
+        .prix {
             width: 100px;
         }
-        .marche{
+
+        .marche {
             width: 150px;
         }
-        .fond{
+
+        .fond {
             width: 170px;
         }
-        .volume{
+
+        .volume {
             width: 140px;
         }
-        .h24{
+
+        .h24 {
             width: 100px;
         }
 
@@ -48,7 +56,7 @@
         <th class="rang"><abbr title="Position">Rang</abbr></th>
         <th class="nom">Nom</th>
         <th class="symbole">Symbole</th>
-        <th class="prix">Prix (EU)</th>
+        <th class="prix">Prix(EU)</th>
         <th class="marche">Cap de marché</th>
         <th class="fond">Fond en circulation</th>
         <th class="volume">Volume (24h)</th>
@@ -96,22 +104,24 @@
             var $item = $(
                 "<tr class='cryptocurrency'" +
 
-                "<th class='rank'" + (i + 1) + "</th>" +
-                "<td class='name'" + cryptocurrencies[i].name + "</td>" +
-                "<td class='symbol" + cryptocurrencies[i].symbol + "</td>" +
-                "<td class='price'" + cryptocurrencies[i].price + "</td>" +
-                "<td class='market_cap'" + cryptocurrencies[i].market_cap + "</td>" +
-                "<td class='circulating_supply" + cryptocurrencies[i].circulating_supply + "</td>" +
-                "<td class='volume_24h'" + cryptocurrencies[i].volume_24h + "</td>" +
-                "<td class='percentage_change_24h" + cryptocurrencies[i].percentage_change_24h + "</td>" +
+                "<th class='rank'>" + (i + 1) + "</th>" +
+                "<td class='name'>" + cryptocurrencies[i].name + "</td>" +
+                "<td class='symbol'>" + cryptocurrencies[i].symbol + "</td>" +
+                "<td class='price'>" + cryptocurrencies[i].price + "</td>" +
+                "<td class='market_cap'>" + cryptocurrencies[i].market_cap + "</td>" +
+                "<td class='circulating_supply'>" + cryptocurrencies[i].circulating_supply + "</td>" +
+                "<td class='volume_24h'>" + cryptocurrencies[i].volume_24h + "</td>" +
+                "<td class='percentage_change_24h'>" + cryptocurrencies[i].percentage_change_24h + "</td>" +
 
                 "</tr>"
             );
             cryptocurrencies[i].$item = $item;
             $list.append($item);
+
         }
     }
-}
-    </script>
+
+    resetBoard();
+</script>
 </body>
 </html>
